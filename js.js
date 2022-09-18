@@ -30,7 +30,7 @@ form.addEventListener("submit", (e) => {
     email.placeholder = "email@example.com";
     error(email);
   }
-  if (password.value == "") {
+  if (password.value == "" || password.value.length < 5) {
       e.preventDefault();
       password.placeholder = "";
       
